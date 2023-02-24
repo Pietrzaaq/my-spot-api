@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using MySpot.Api.Commands;
-using MySpot.Api.Entities;
-using MySpot.Api.Services;
-using MySpot.Api.ValueObjects;
+using MySpot.Application.Commands;
+using MySpot.Application.Services;
+using MySpot.Core.Repositories;
+using MySpot.Infrastructure.Repositories;
+using MySpot.Tests.Unit.Shared;
 using Shouldly;
 using Xunit;
 
@@ -16,9 +16,9 @@ public class ReservationServiceTests
     public void given_reservation_for_not_taken_date_create_reservation_should_succeed()
     {
         // Arrange
-        var parkingSpot = _weeklyParkingSpots.First();
+        var parkingSpot = _weeklyParkingSpotRepository.GetAll().First();
         var command = new CreateReservation(parkingSpot.Id,
-            Guid.NewGuid(), DateTime.UtcNow.AddMinutes(5), "John Doe", "XYZ123");
+            Guid.NewGuid(), new DateTime(2022, 07, 9), "John Doe", "XYZ123");
 
         // Act
         var reservationId = _reservationService.Create(command);
@@ -30,23 +30,15 @@ public class ReservationServiceTests
 
     #region  Arrange
 
-    private static readonly Clock Clock = new Clock();
-    private readonly ReservationService _reservationService;
+    private readonly IClock _clock;
+    private readonly IWeeklyParkingSpotRepository _weeklyParkingSpotRepository;
+    private readonly IReservationService _reservationService;
 
-    private readonly List<WeeklyParkingSpot> _weeklyParkingSpots;
-    
     public ReservationServiceTests()
     {
-        _weeklyParkingSpots = new()
-        {
-            new WeeklyParkingSpot(Guid.Parse("00000000-0000-0000-0000-000000000001"), new Week(Clock.Current()), "P1" ),
-            new WeeklyParkingSpot(Guid.Parse("00000000-0000-0000-0000-000000000002"), new Week(Clock.Current()), "P2" ),
-            new WeeklyParkingSpot(Guid.Parse("00000000-0000-0000-0000-000000000003"), new Week(Clock.Current()), "P3" ),
-            new WeeklyParkingSpot(Guid.Parse("00000000-0000-0000-0000-000000000004"), new Week(Clock.Current()), "P4" ),
-            new WeeklyParkingSpot(Guid.Parse("00000000-0000-0000-0000-000000000005"), new Week(Clock.Current()), "P5" )
-        };
-        
-        _reservationService = new ReservationService(_weeklyParkingSpots);
+        _clock = new TestClock();
+        _weeklyParkingSpotRepository = new InMemoryWeeklyParkingSpotRepository(_clock);
+        _reservationService = new ReservationService(_clock, _weeklyParkingSpotRepository);
     }
     
     #endregion

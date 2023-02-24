@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WCJ3XE8FijFeWAI5tBXQ7fukZCRTILuJIf8aTT5cG8qyTUvyJzv75t+Baw1Et27C8dDC5FK66echsRHnzZwucA==",
+  "success": true,
+  "projectFilePath": "C:\\Nauka\\DevMentors\\MySpot\\src\\MySpot.Infrastructure\\MySpot.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dawid Pietrzak\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0-preview.1.23110.8\\microsoft.extensions.dependencyinjection.abstractions.8.0.0-preview.1.23110.8.nupkg.sha512"
+  ],
+  "logs": []
+}

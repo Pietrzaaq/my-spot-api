@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TaDprPh2ghWNYDGF7Z7b3rZ6tr1qlVl9cDH4B9HBnL5LmNbuK6hYpzISE2EF/y7BHxMqf8m2TNboVyc+QEmZQw==",
+  "dgSpecHash": "1LEMlHAS+PEHrVmm3DZEP0de41BCyuKcI/bWnAAutd/FwsDd+ZyjDVIMiyWHMqZLjpq+n67b4c5OqugaL8zYkQ==",
   "success": true,
   "projectFilePath": "C:\\Nauka\\DevMentors\\MySpot\\tests\\MySpot.Tests.Unit\\MySpot.Tests.Unit.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\Dawid Pietrzak\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",
     "C:\\Users\\Dawid Pietrzak\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Dawid Pietrzak\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Dawid Pietrzak\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0-preview.1.23110.8\\microsoft.extensions.dependencyinjection.abstractions.8.0.0-preview.1.23110.8.nupkg.sha512",
     "C:\\Users\\Dawid Pietrzak\\.nuget\\packages\\microsoft.net.test.sdk\\16.11.0\\microsoft.net.test.sdk.16.11.0.nupkg.sha512",
     "C:\\Users\\Dawid Pietrzak\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\Dawid Pietrzak\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

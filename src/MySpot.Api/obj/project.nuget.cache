@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "gi6WbTE+quijW+atWxrbWYwgtM6ZOV2pFEpUGnKA8xEZlWbjjVK/WUlBpA2ev+B8Ag688gfl/YnGigp5K4FOpA==",
+  "dgSpecHash": "qrP1CKKic699PVaywMNusuzYb4vC7DlfhciCO3c3FChXKHNuNr9MZjUEeJn8L3552hIRYa0TGYOJ5D5ye1gxAg==",
   "success": true,
   "projectFilePath": "C:\\Nauka\\DevMentors\\MySpot\\src\\MySpot.Api\\MySpot.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dawid Pietrzak\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Dawid Pietrzak\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0-preview.1.23110.8\\microsoft.extensions.dependencyinjection.abstractions.8.0.0-preview.1.23110.8.nupkg.sha512",
     "C:\\Users\\Dawid Pietrzak\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Dawid Pietrzak\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\Dawid Pietrzak\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
