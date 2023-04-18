@@ -3,7 +3,7 @@ using System.Linq;
 using MySpot.Application.Commands;
 using MySpot.Application.Services;
 using MySpot.Core.Repositories;
-using MySpot.Infrastructure.Repositories;
+using MySpot.Infrastructure.DAL.Repositories;
 using MySpot.Tests.Unit.Shared;
 using Shouldly;
 using Xunit;
